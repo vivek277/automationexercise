@@ -1,0 +1,33 @@
+22:52:05 [INFO] utils.TestListeners - ====TEST EXECUTION STARTED====
+22:52:05 [INFO] tests.HomeTest - Launching Browser
+22:52:06 [INFO] tests.HomeTest - Navigating to URL
+22:52:10 [INFO] utils.TestListeners - TEST STARTED:openSignupPage
+22:52:10 [INFO] tests.HomeTest - ******Clicking on signupbutton******
+22:52:11 [INFO] utils.TestListeners - TEST Pass:openSignupPage
+22:52:11 [INFO] tests.HomeTest - Closing Browser
+22:52:11 [INFO] tests.RegistrationTest - Launching Browser
+22:52:12 [INFO] tests.RegistrationTest - Navigating to URL
+22:52:15 [INFO] utils.TestListeners - TEST STARTED:Register
+22:52:15 [INFO] tests.RegistrationTest - ******Starting RegistrationTest******
+22:52:16 [INFO] tests.RegistrationTest - ******SignupData******
+22:52:16 [INFO] tests.RegistrationTest - ******AccountInfoData******
+22:52:16 [INFO] tests.RegistrationTest - ******ClickingOnSignUpButton******
+22:52:17 [INFO] tests.RegistrationTest - ******EnteredName******
+22:52:17 [INFO] tests.RegistrationTest - ******EnteredEmail******
+22:52:17 [INFO] tests.RegistrationTest - ******clickedon signupbutton******
+22:52:18 [INFO] tests.RegistrationTest - ******EnterePassword******
+22:52:18 [INFO] tests.RegistrationTest - ******EntereFirstName,LastName,Address,State,City,ZIP,MobileNumber******
+22:52:19 [INFO] tests.RegistrationTest - ******selectDOB******
+22:52:19 [INFO] tests.RegistrationTest - ******ClickingOnCreateAccountButton******
+22:52:22 [INFO] tests.RegistrationTest - ******ValidationOfMessage******
+22:52:22 [INFO] tests.RegistrationTest - ******ClickingOnContinueButton******
+22:52:24 [INFO] utils.TestListeners - TEST Pass:Register
+22:52:24 [INFO] tests.RegistrationTest - Closing Browser
+22:52:24 [INFO] tests.LoginTest - Launching Browser
+22:52:25 [INFO] tests.LoginTest - Navigating to URL
+22:52:35 [INFO] utils.TestListeners - TEST STARTED:login
+22:52:35 [INFO] tests.LoginTest - ******Clicking on signup/loginbutton******
+22:52:37 [INFO] tests.LoginTest - ******LoginData******
+22:52:41 [INFO] utils.TestListeners - TEST Pass:login
+22:52:41 [INFO] tests.LoginTest - Closing Browser
+22:52:41 [INFO] utils.TestListeners - ====TEST EXECUTIONFinish====

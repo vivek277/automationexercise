@@ -9,7 +9,6 @@ import pages.AccountInformationPage;
 import pages.HomePage;
 import pages.RegistrationPage;
 import utils.ExcelReader;
-import utils.ScreenshotUtil;
 import utils.TestData;
 
 public class RegistrationTest extends BaseTest {
@@ -83,10 +82,9 @@ public class RegistrationTest extends BaseTest {
 		 String ExpectedText = "Congratulations! Your new account has been successfully created!";
 		 Assert.assertEquals(actualText.trim(), ExpectedText,"Account created success message");
 		 
-		 ScreenshotUtil.takeScreenshot(driver,"AccountCreatedSuccess");
-		 
 		 log.info("******ClickingOnContinueButton******");
 		 acp.clickContinue();
 	}
+	
 	
 }

@@ -15,8 +15,6 @@ public class LoginTest extends BaseTest{
 		hp.clickSignuplink();
 		
 		
-         
-		
 		log.info("******LoginData******");
 		LoginPage lp = new LoginPage(driver);
 		lp.logindata(TestData.email, TestData.password);
