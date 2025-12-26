@@ -1,14 +1,16 @@
 package tests;
 
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.TestData;
+import utils.RetryAnalyzer;
 
 public class LoginTest extends BaseTest{
-	@Test
+	@Test(retryAnalyzer=RetryAnalyzer.class)
 	public void login() {
 		log.info("******Clicking on signup/loginbutton******");
 		HomePage hp = new HomePage(driver);

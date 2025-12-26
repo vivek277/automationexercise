@@ -10,10 +10,10 @@ import pages.HomePage;
 import pages.RegistrationPage;
 import utils.ExcelReader;
 import utils.TestData;
-
+import utils.RetryAnalyzer;
 public class RegistrationTest extends BaseTest {
 	
-	@Test
+	@Test(retryAnalyzer=RetryAnalyzer.class)
 	public void Register() {
 		
 		log.info("******Starting RegistrationTest******");
