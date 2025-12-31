@@ -44,11 +44,12 @@ public class BaseTest {
 		driver.get(prop.getProperty("url"));	
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		log.info("Closing Browser");
 		if(driver!=null) {
 		driver.quit();
+		driver=null;
 		}
 	}
 }

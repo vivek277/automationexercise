@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import pages.HomePage;
 import pages.LoginPage;
-import utils.TestData;
 import utils.RetryAnalyzer;
 
 public class LoginTest extends BaseTest{
@@ -19,7 +18,7 @@ public class LoginTest extends BaseTest{
 		
 		log.info("******LoginData******");
 		LoginPage lp = new LoginPage(driver);
-		lp.logindata(TestData.email, TestData.password);
+		lp.logindata(prop.getProperty("email"),prop.getProperty("password"));
 		lp.login();
 	}
 

@@ -24,7 +24,7 @@ public class AccountInformationPage extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(xpath = "//label[@for='id_gender1']")
+	@FindBy(xpath = "//input[@id='id_gender1']")
 	private WebElement mrRadio;
 	
 	@FindBy(id="password")
