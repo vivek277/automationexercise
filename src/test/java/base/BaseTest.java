@@ -3,13 +3,16 @@ package base;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 
 
 
@@ -19,10 +22,10 @@ public class BaseTest {
 	public Logger log;
 	public Properties prop;
 	
-	@BeforeMethod
-	public void setup() {
+	@Parameters({"os","browser"})
+	@BeforeClass
+	public void setup(String os, String br) {
 		log = LogManager.getLogger(this.getClass());
-		
 		try {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
@@ -32,24 +35,36 @@ public class BaseTest {
 		}
 		log.info("Launching Browser");
 		
-		String browser = prop.getProperty("browser");
-		if(browser.equalsIgnoreCase("chrome")) {
-		driver = new ChromeDriver();
+		switch(br.toLowerCase())
+		{
+		case "chrome" : 
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\WebDriver\\chromedriver.exe");
+			driver = new ChromeDriver(); 
+			break;
+		case "edge" : 
+			System.setProperty("webdriver.edge.driver","C:\\Users\\WebDriver\\msedgedriver.exe");
+			driver = new EdgeDriver(); 
+			break;
+		case "firefox" : 
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\WebDriver\\geckodriver.exe");
+			driver = new FirefoxDriver(); 
+			break;
+		default : throw new RuntimeException("Invalid browser name: " + br);
 		}
-		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		log.info("Navigating to URL");
-		driver.get(prop.getProperty("url"));	
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
 	}
 
-	@AfterMethod(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		log.info("Closing Browser");
 		if(driver!=null) {
 		driver.quit();
-		driver=null;
 		}
 	}
 }
