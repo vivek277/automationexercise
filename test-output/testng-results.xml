@@ -1,67 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-31T15:50:39 IST" name="AutomationSuite" finished-at="2025-12-31T15:51:34 IST" duration-ms="55508">
+  <suite started-at="2026-01-06T15:53:28 IST" name="AutomationSuite" finished-at="2026-01-06T15:56:15 IST" duration-ms="167784">
     <groups>
     </groups>
-    <test started-at="2025-12-31T15:50:39 IST" name="AllTest" finished-at="2025-12-31T15:51:34 IST" duration-ms="55508">
+    <test started-at="2026-01-06T15:53:28 IST" name="AllTest" finished-at="2026-01-06T15:56:15 IST" duration-ms="167784">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6f80fafe]" started-at="2025-12-31T15:51:07 IST" name="setup" finished-at="2025-12-31T15:51:11 IST" duration-ms="4825" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@5f4d427e]" started-at="2026-01-06T15:53:51 IST" name="setup" finished-at="2026-01-06T15:54:09 IST" duration-ms="17764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.LoginTest@6f80fafe]" started-at="2025-12-31T15:51:11 IST" name="login" finished-at="2025-12-31T15:51:15 IST" duration-ms="3879" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.LoginTest@5f4d427e]" started-at="2026-01-06T15:54:09 IST" name="login" finished-at="2026-01-06T15:54:17 IST" duration-ms="7954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6f80fafe]" started-at="2025-12-31T15:51:15 IST" name="tearDown" finished-at="2025-12-31T15:51:16 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@5f4d427e]" started-at="2026-01-06T15:54:17 IST" name="tearDown" finished-at="2026-01-06T15:54:17 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
-      <class name="tests.HomeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@fd46303]" started-at="2025-12-31T15:50:39 IST" name="setup" finished-at="2025-12-31T15:50:48 IST" duration-ms="8920" status="PASS">
+      <class name="tests.ProductDetailsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductDetailsTest@224b4d61]" started-at="2026-01-06T15:55:26 IST" name="setup" finished-at="2026-01-06T15:55:31 IST" duration-ms="5582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openSignupPage()[pri:0, instance:tests.HomeTest@fd46303]" started-at="2025-12-31T15:50:48 IST" name="openSignupPage" finished-at="2025-12-31T15:50:49 IST" duration-ms="1856" status="PASS">
+        <test-method signature="ProductDetails()[pri:0, instance:tests.ProductDetailsTest@224b4d61]" started-at="2026-01-06T15:55:31 IST" name="ProductDetails" finished-at="2026-01-06T15:55:50 IST" duration-ms="19311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductDetailsTest@224b4d61]" started-at="2026-01-06T15:55:50 IST" name="tearDown" finished-at="2026-01-06T15:55:51 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductDetailsTest -->
+      <class name="tests.HomeTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomeTest@4602c2a9]" started-at="2026-01-06T15:53:28 IST" name="setup" finished-at="2026-01-06T15:53:34 IST" duration-ms="6918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openSignupPage()[pri:0, instance:tests.HomeTest@4602c2a9]" started-at="2026-01-06T15:53:34 IST" name="openSignupPage" finished-at="2026-01-06T15:53:37 IST" duration-ms="2629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSignupPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@fd46303]" started-at="2025-12-31T15:50:49 IST" name="tearDown" finished-at="2025-12-31T15:50:50 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomeTest@4602c2a9]" started-at="2026-01-06T15:53:37 IST" name="tearDown" finished-at="2026-01-06T15:53:37 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomeTest -->
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@3af17be2]" started-at="2025-12-31T15:51:16 IST" name="setup" finished-at="2025-12-31T15:51:20 IST" duration-ms="4768" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:54:17 IST" name="setup" finished-at="2026-01-06T15:54:40 IST" duration-ms="23154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Product()[pri:0, instance:tests.ProductTest@3af17be2]" started-at="2025-12-31T15:51:20 IST" name="Product" finished-at="2025-12-31T15:51:34 IST" duration-ms="13371" status="PASS">
+        <test-method retried="true" signature="Product()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:54:40 IST" name="Product" finished-at="2026-01-06T15:54:47 IST" duration-ms="7594" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a data-toggle="collapse" data-parent="#accordian" href="#Men">...</a> is not clickable at point (226, 678). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=4&amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJT5n6zZ9pEDFQQAgwMdTRkSAQ" data-load-complete="true"></iframe>
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08c06cfd8c2f21dc70d145c3fef47ba1, clickElement {id=f.E25537A0544AA24F0010FBD60112AD73.d.B58E18D079CDB334E9A4854DF38562BF.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64515}, goog:processID: 20484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64515/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (08c06cfd8c2f21dc70d145c3fef47ba1)] -> xpath: //a[@href='#Men']]
+Session ID: 08c06cfd8c2f21dc70d145c3fef47ba1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-toggle="collapse" data-parent="#accordian" href="#Men">...</a> is not clickable at point (226, 678). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=4&amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJT5n6zZ9pEDFQQAgwMdTRkSAQ" data-load-complete="true"></iframe>
+  (Session info: chrome=143.0.7499.170)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08c06cfd8c2f21dc70d145c3fef47ba1, clickElement {id=f.E25537A0544AA24F0010FBD60112AD73.d.B58E18D079CDB334E9A4854DF38562BF.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64515}, goog:processID: 20484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64515/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (08c06cfd8c2f21dc70d145c3fef47ba1)] -> xpath: //a[@href='#Men']]
+Session ID: 08c06cfd8c2f21dc70d145c3fef47ba1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at pages.ProductPage.MenClick(ProductPage.java:32)
+at tests.ProductTest.Product(ProductTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Product -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@3af17be2]" started-at="2025-12-31T15:51:34 IST" name="tearDown" finished-at="2025-12-31T15:51:34 IST" duration-ms="393" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:54:47 IST" name="tearDown" finished-at="2026-01-06T15:54:48 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:54:48 IST" name="setup" finished-at="2026-01-06T15:55:05 IST" duration-ms="17809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Product()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:55:05 IST" name="Product" finished-at="2026-01-06T15:55:25 IST" duration-ms="19957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Product -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@6e521c1e]" started-at="2026-01-06T15:55:25 IST" name="tearDown" finished-at="2026-01-06T15:55:26 IST" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.ProductTest -->
       <class name="tests.RegistrationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTest@4fcee388]" started-at="2025-12-31T15:50:50 IST" name="setup" finished-at="2025-12-31T15:50:58 IST" duration-ms="8359" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTest@37f21974]" started-at="2026-01-06T15:53:37 IST" name="setup" finished-at="2026-01-06T15:53:41 IST" duration-ms="4064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Register()[pri:0, instance:tests.RegistrationTest@4fcee388]" started-at="2025-12-31T15:50:58 IST" name="Register" finished-at="2025-12-31T15:51:06 IST" duration-ms="8471" status="PASS">
+        <test-method signature="Register()[pri:0, instance:tests.RegistrationTest@37f21974]" started-at="2026-01-06T15:53:41 IST" name="Register" finished-at="2026-01-06T15:53:51 IST" duration-ms="9324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@4fcee388]" started-at="2025-12-31T15:51:07 IST" name="tearDown" finished-at="2025-12-31T15:51:07 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTest@37f21974]" started-at="2026-01-06T15:53:51 IST" name="tearDown" finished-at="2026-01-06T15:53:51 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@5d5d9e5]" started-at="2026-01-06T15:55:51 IST" name="setup" finished-at="2026-01-06T15:55:57 IST" duration-ms="5874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkout()[pri:0, instance:tests.CheckoutTest@5d5d9e5]" started-at="2026-01-06T15:55:57 IST" name="checkout" finished-at="2026-01-06T15:56:15 IST" duration-ms="18586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@5d5d9e5]" started-at="2026-01-06T15:56:15 IST" name="tearDown" finished-at="2026-01-06T15:56:15 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
     </test> <!-- AllTest -->
   </suite> <!-- AutomationSuite -->
 </testng-results>

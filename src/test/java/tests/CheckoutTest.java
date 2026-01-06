@@ -4,20 +4,21 @@ import java.time.Duration;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import pages.CheckoutPage;
 import pages.HeaderPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ProductDetailsPage;
 import pages.ProductPage;
 import utils.RetryAnalyzer;
 
-public class ProductTest extends BaseTest{
-     
+public class CheckoutTest extends BaseTest {
+	
 	@Test(retryAnalyzer=RetryAnalyzer.class)
-	public void Product() {
+	public void checkout(){
 		
 		log.info("******Clicking on signupbutton******");
 		HomePage hp = new HomePage(driver);
@@ -44,10 +45,26 @@ public class ProductTest extends BaseTest{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.urlContains("product_details"));
 		
-		String currenturl = driver.getCurrentUrl();
-		System.out.println("Current URL:" + currenturl);
-		Assert.assertTrue(currenturl.contains("product_details"),"product details not open");
-		System.out.println("product opened successfully");
-	}
-	
+		ProductDetailsPage pdp = new ProductDetailsPage(driver);
+		log.info("******Clicking on Add To Cart button******");
+		pdp.addToCart();
+		log.info("******Clicking on View Cart button******");
+		pdp.clickViewCart();
+		
+		
+		CheckoutPage cp = new CheckoutPage(driver);
+		log.info("******Clicking on Proceed to Checkout******");
+		cp.proceedcheckout();
+		log.info("******Verify cart price******");
+		cp.cartpriceverify();
+		log.info("******Verify cart quantity******");
+		cp.cartquantityverify();
+		log.info("******Verify cart total price******");
+		cp.carttotalverify();
+		log.info("******providing comment******");
+		cp.comment();
+		log.info("******Clicking on Place Order button******");
+		cp.placeorder();
+
+     }
 }

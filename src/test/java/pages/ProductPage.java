@@ -24,11 +24,6 @@ public class ProductPage extends BasePage {
 	@FindBy(xpath ="//a[@href='/category_products/3']")
 	private WebElement Tshirts;
 	
-	//@FindBy(xpath="//h2[contains(text(), '1299')]/ancestor::div[contains(@class,'product-image-wrapper')]//a[2]")
-	//private WebElement productchk;
-	
-	//@FindBy(xpath="//h2[contains(text(), '1299')]/ancestor::div[contains(@class, 'product-image-wrapper')]//div[contains(@class, 'product-overlay')]//a")
-	//private WebElement productcard;
 	
 	@FindBy(xpath="(//h2[contains(text(),'Rs. 1299')]/ancestor::div[contains(@class,'product-image-wrapper')]//a)[3]")
 	private WebElement productcard;

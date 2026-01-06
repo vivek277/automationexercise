@@ -11,6 +11,8 @@
       <class name="tests.RegistrationTest"/>
       <class name="tests.LoginTest"/>
       <class name="tests.ProductTest"/>
+      <class name="tests.ProductDetailsTest"/>
+      <class name="tests.CheckoutTest"/>
     </classes>
   </test> <!-- AllTest -->
 </suite> <!-- AutomationSuite -->

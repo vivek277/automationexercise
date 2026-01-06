@@ -11,13 +11,14 @@ import base.BaseTest;
 import pages.HeaderPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ProductDetailsPage;
 import pages.ProductPage;
 import utils.RetryAnalyzer;
 
-public class ProductTest extends BaseTest{
-     
+public class ProductDetailsTest extends BaseTest{
+
 	@Test(retryAnalyzer=RetryAnalyzer.class)
-	public void Product() {
+	public void ProductDetails(){
 		
 		log.info("******Clicking on signupbutton******");
 		HomePage hp = new HomePage(driver);
@@ -44,10 +45,22 @@ public class ProductTest extends BaseTest{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.urlContains("product_details"));
 		
-		String currenturl = driver.getCurrentUrl();
-		System.out.println("Current URL:" + currenturl);
-		Assert.assertTrue(currenturl.contains("product_details"),"product details not open");
-		System.out.println("product opened successfully");
+		ProductDetailsPage pdp = new ProductDetailsPage(driver);
+		log.info("******Clicking on Add To Cart button******");
+		pdp.addToCart();
+		
+		log.info("******Confimation of Product Added******");
+		
+		String actualText = pdp.isProductAddedToCartMessage();
+		String expectedText = "Your product has been added to cart.";
+		Assert.assertEquals(actualText.trim(), expectedText, "Product added to cart successfully");
+		
+		log.info("******Clicking on view cart button******");
+		pdp.clickViewCart();
+		
+		
+		
 	}
+	
 	
 }

@@ -1,43 +1,83 @@
-15:50:39 [INFO] utils.TestListeners - ====TEST EXECUTION STARTED====
-15:50:39 [INFO] tests.HomeTest - Launching Browser
-15:50:43 [INFO] tests.HomeTest - Navigating to URL
-15:50:48 [INFO] utils.TestListeners - TEST STARTED:openSignupPage
-15:50:48 [INFO] tests.HomeTest - ******Clicking on signupbutton******
-15:50:49 [INFO] utils.TestListeners - TEST Pass:openSignupPage
-15:50:49 [INFO] tests.HomeTest - Closing Browser
-15:50:50 [INFO] tests.RegistrationTest - Launching Browser
-15:50:54 [INFO] tests.RegistrationTest - Navigating to URL
-15:50:58 [INFO] utils.TestListeners - TEST STARTED:Register
-15:50:58 [INFO] tests.RegistrationTest - ******Starting RegistrationTest******
-15:50:59 [INFO] tests.RegistrationTest - ******SignupData******
-15:50:59 [INFO] tests.RegistrationTest - ******AccountInfoData******
-15:50:59 [INFO] tests.RegistrationTest - ******ClickingOnSignUpButton******
-15:51:00 [INFO] tests.RegistrationTest - ******EnteredName******
-15:51:00 [INFO] tests.RegistrationTest - ******EnteredEmail******
-15:51:00 [INFO] tests.RegistrationTest - ******clickedon signupbutton******
-15:51:00 [INFO] tests.RegistrationTest - ******EnterePassword******
-15:51:01 [INFO] tests.RegistrationTest - ******EntereFirstName,LastName,Address,State,City,ZIP,MobileNumber******
-15:51:02 [INFO] tests.RegistrationTest - ******selectDOB******
-15:51:02 [INFO] tests.RegistrationTest - ******ClickingOnCreateAccountButton******
-15:51:05 [INFO] tests.RegistrationTest - ******ValidationOfMessage******
-15:51:05 [INFO] tests.RegistrationTest - ******ClickingOnContinueButton******
-15:51:07 [INFO] utils.TestListeners - TEST Pass:Register
-15:51:07 [INFO] tests.RegistrationTest - Closing Browser
-15:51:07 [INFO] tests.LoginTest - Launching Browser
-15:51:08 [INFO] tests.LoginTest - Navigating to URL
-15:51:11 [INFO] utils.TestListeners - TEST STARTED:login
-15:51:11 [INFO] tests.LoginTest - ******Clicking on signup/loginbutton******
-15:51:13 [INFO] tests.LoginTest - ******LoginData******
-15:51:15 [INFO] utils.TestListeners - TEST Pass:login
-15:51:15 [INFO] tests.LoginTest - Closing Browser
-15:51:16 [INFO] tests.ProductTest - Launching Browser
-15:51:17 [INFO] tests.ProductTest - Navigating to URL
-15:51:20 [INFO] utils.TestListeners - TEST STARTED:Product
-15:51:20 [INFO] tests.ProductTest - ******Clicking on signupbutton******
-15:51:21 [INFO] tests.ProductTest - ******LoginData******
-15:51:25 [INFO] tests.ProductTest - ******Clicking on Product******
-15:51:28 [INFO] tests.ProductTest - ******Clicking on Category******
-15:51:31 [INFO] tests.ProductTest - ******Clicking on Specific product******
-15:51:34 [INFO] utils.TestListeners - TEST Pass:Product
-15:51:34 [INFO] tests.ProductTest - Closing Browser
-15:51:34 [INFO] utils.TestListeners - ====TEST EXECUTION FINISH====
+15:53:28 [INFO] utils.TestListeners - ====TEST EXECUTION STARTED====
+15:53:28 [INFO] tests.HomeTest - Launching Browser
+15:53:29 [INFO] tests.HomeTest - Navigating to URL
+15:53:34 [INFO] utils.TestListeners - TEST STARTED:openSignupPage
+15:53:34 [INFO] tests.HomeTest - ******Clicking on signupbutton******
+15:53:37 [INFO] utils.TestListeners - TEST Pass:openSignupPage
+15:53:37 [INFO] tests.HomeTest - Closing Browser
+15:53:37 [INFO] tests.RegistrationTest - Launching Browser
+15:53:38 [INFO] tests.RegistrationTest - Navigating to URL
+15:53:41 [INFO] utils.TestListeners - TEST STARTED:Register
+15:53:41 [INFO] tests.RegistrationTest - ******Starting RegistrationTest******
+15:53:42 [INFO] tests.RegistrationTest - ******SignupData******
+15:53:42 [INFO] tests.RegistrationTest - ******AccountInfoData******
+15:53:42 [INFO] tests.RegistrationTest - ******ClickingOnSignUpButton******
+15:53:43 [INFO] tests.RegistrationTest - ******EnteredName******
+15:53:43 [INFO] tests.RegistrationTest - ******EnteredEmail******
+15:53:43 [INFO] tests.RegistrationTest - ******clickedon signupbutton******
+15:53:45 [INFO] tests.RegistrationTest - ******EnterePassword******
+15:53:45 [INFO] tests.RegistrationTest - ******EntereFirstName,LastName,Address,State,City,ZIP,MobileNumber******
+15:53:46 [INFO] tests.RegistrationTest - ******selectDOB******
+15:53:46 [INFO] tests.RegistrationTest - ******ClickingOnCreateAccountButton******
+15:53:48 [INFO] tests.RegistrationTest - ******ValidationOfMessage******
+15:53:48 [INFO] tests.RegistrationTest - ******ClickingOnContinueButton******
+15:53:51 [INFO] utils.TestListeners - TEST Pass:Register
+15:53:51 [INFO] tests.RegistrationTest - Closing Browser
+15:53:51 [INFO] tests.LoginTest - Launching Browser
+15:53:52 [INFO] tests.LoginTest - Navigating to URL
+15:54:09 [INFO] utils.TestListeners - TEST STARTED:login
+15:54:09 [INFO] tests.LoginTest - ******Clicking on signup/loginbutton******
+15:54:11 [INFO] tests.LoginTest - ******LoginData******
+15:54:17 [INFO] utils.TestListeners - TEST Pass:login
+15:54:17 [INFO] tests.LoginTest - Closing Browser
+15:54:17 [INFO] tests.ProductTest - Launching Browser
+15:54:18 [INFO] tests.ProductTest - Navigating to URL
+15:54:40 [INFO] utils.TestListeners - TEST STARTED:Product
+15:54:40 [INFO] tests.ProductTest - ******Clicking on signupbutton******
+15:54:42 [INFO] tests.ProductTest - ******LoginData******
+15:54:46 [INFO] tests.ProductTest - ******Clicking on Products******
+15:54:46 [INFO] tests.ProductTest - ******Clicking on Category******
+15:54:47 [INFO] utils.TestListeners - TEST Skip:Product
+15:54:47 [INFO] tests.ProductTest - Closing Browser
+15:54:48 [INFO] tests.ProductTest - Launching Browser
+15:54:49 [INFO] tests.ProductTest - Navigating to URL
+15:55:05 [INFO] utils.TestListeners - TEST STARTED:Product
+15:55:05 [INFO] tests.ProductTest - ******Clicking on signupbutton******
+15:55:08 [INFO] tests.ProductTest - ******LoginData******
+15:55:16 [INFO] tests.ProductTest - ******Clicking on Products******
+15:55:21 [INFO] tests.ProductTest - ******Clicking on Category******
+15:55:23 [INFO] tests.ProductTest - ******Clicking on Specific product******
+15:55:25 [INFO] utils.TestListeners - TEST Pass:Product
+15:55:25 [INFO] tests.ProductTest - Closing Browser
+15:55:26 [INFO] tests.ProductDetailsTest - Launching Browser
+15:55:27 [INFO] tests.ProductDetailsTest - Navigating to URL
+15:55:31 [INFO] utils.TestListeners - TEST STARTED:ProductDetails
+15:55:31 [INFO] tests.ProductDetailsTest - ******Clicking on signupbutton******
+15:55:35 [INFO] tests.ProductDetailsTest - ******LoginData******
+15:55:40 [INFO] tests.ProductDetailsTest - ******Clicking on Products******
+15:55:43 [INFO] tests.ProductDetailsTest - ******Clicking on Category******
+15:55:46 [INFO] tests.ProductDetailsTest - ******Clicking on Specific product******
+15:55:49 [INFO] tests.ProductDetailsTest - ******Clicking on Add To Cart button******
+15:55:49 [INFO] tests.ProductDetailsTest - ******Confimation of Product Added******
+15:55:49 [INFO] tests.ProductDetailsTest - ******Clicking on view cart button******
+15:55:50 [INFO] utils.TestListeners - TEST Pass:ProductDetails
+15:55:50 [INFO] tests.ProductDetailsTest - Closing Browser
+15:55:51 [INFO] tests.CheckoutTest - Launching Browser
+15:55:52 [INFO] tests.CheckoutTest - Navigating to URL
+15:55:57 [INFO] utils.TestListeners - TEST STARTED:checkout
+15:55:57 [INFO] tests.CheckoutTest - ******Clicking on signupbutton******
+15:55:57 [INFO] tests.CheckoutTest - ******LoginData******
+15:56:01 [INFO] tests.CheckoutTest - ******Clicking on Products******
+15:56:04 [INFO] tests.CheckoutTest - ******Clicking on Category******
+15:56:07 [INFO] tests.CheckoutTest - ******Clicking on Specific product******
+15:56:09 [INFO] tests.CheckoutTest - ******Clicking on Add To Cart button******
+15:56:10 [INFO] tests.CheckoutTest - ******Clicking on View Cart button******
+15:56:11 [INFO] tests.CheckoutTest - ******Clicking on Proceed to Checkout******
+15:56:13 [INFO] tests.CheckoutTest - ******Verify cart price******
+15:56:13 [INFO] tests.CheckoutTest - ******Verify cart quantity******
+15:56:13 [INFO] tests.CheckoutTest - ******Verify cart total price******
+15:56:13 [INFO] tests.CheckoutTest - ******providing comment******
+15:56:13 [INFO] tests.CheckoutTest - ******Clicking on Place Order button******
+15:56:15 [INFO] utils.TestListeners - TEST Pass:checkout
+15:56:15 [INFO] tests.CheckoutTest - Closing Browser
+15:56:15 [INFO] utils.TestListeners - ====TEST EXECUTION FINISH====
