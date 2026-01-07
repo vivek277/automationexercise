@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="AutomationSuite">
+<suite name="parallel" parallel="classes" thread-count="5">
   <listeners>
   <listener class-name="utils.TestListeners"/>
   </listeners>
@@ -9,8 +9,8 @@
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.HomeTest"/>
-       <class name="tests.LoginTest"/>
       <class name="tests.RegistrationTest"/>
+      <class name="tests.LoginTest"/>
       <class name="tests.ProductTest"/>
       <class name="tests.ProductDetailsTest"/>
       <class name="tests.CheckoutTest"/>

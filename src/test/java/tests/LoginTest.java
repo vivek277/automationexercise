@@ -9,7 +9,7 @@ import pages.LoginPage;
 import utils.RetryAnalyzer;
 
 public class LoginTest extends BaseTest{
-	@Test(retryAnalyzer=RetryAnalyzer.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class , groups= {"smoke","regression","sanity"})
 	public void login() {
 		log.info("******Clicking on signup/loginbutton******");
 		HomePage hp = new HomePage(driver);

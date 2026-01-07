@@ -13,7 +13,7 @@ import utils.TestData;
 import utils.RetryAnalyzer;
 public class RegistrationTest extends BaseTest {
 	
-	@Test(retryAnalyzer=RetryAnalyzer.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class , groups= {"smoke","regression"})
 	public void Register() {
 		
 		log.info("******Starting RegistrationTest******");

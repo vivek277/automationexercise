@@ -17,7 +17,7 @@ import utils.RetryAnalyzer;
 
 public class CheckoutTest extends BaseTest {
 	
-	@Test(retryAnalyzer=RetryAnalyzer.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class , groups= {"smoke","regression","sanity"})
 	public void checkout(){
 		
 		log.info("******Clicking on signupbutton******");

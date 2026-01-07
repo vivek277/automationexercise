@@ -7,7 +7,7 @@ import utils.RetryAnalyzer;
 
 public class HomeTest extends BaseTest{
 
-	@Test(retryAnalyzer=RetryAnalyzer.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class , groups= {"smoke","regression","sanity"})
 	public void openSignupPage() {
 		log.info("******Clicking on signupbutton******");
 		HomePage hp = new HomePage(driver);

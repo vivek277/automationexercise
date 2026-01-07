@@ -16,7 +16,7 @@ import utils.RetryAnalyzer;
 
 public class ProductTest extends BaseTest{
      
-	@Test(retryAnalyzer=RetryAnalyzer.class)
+	@Test(retryAnalyzer=RetryAnalyzer.class , groups= {"sanity","regression"})
 	public void Product() {
 		
 		log.info("******Clicking on signupbutton******");
